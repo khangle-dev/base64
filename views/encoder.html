@@ -1,0 +1,23 @@
+<div id="list-danger-page" class="page">
+    <div class="menu">
+        <a class="item" href="#!index" style="padding-left: 18px;">
+            <i class="fa fa-home"></i>
+        </a>
+        <span class="item">Encoder</span>
+    </div>
+    <div style="height: 60px;">
+
+    </div>
+</div>
+<div>
+    <div class="dropzone" file-dropzone="[image/png, image/jpeg, image/gif]" file="image" file-name="imageFileName"
+        data-max-file-size="3">
+        <div style="width: 100%; text-align: center; color: #ffffff;">Drop and drag image here <br/>(png jpeg gif)</div>
+
+    </div>
+    <div class="image-container">
+        <img ng-src={{image}} style="height: 60px;border-radius: 10px;" />
+        <span style="padding-left: 10px;color: #5d5a5a;">{{imageFileName}}</span>
+    </div>
+    <textarea style="height: 300px; width: 100%; border-width: 2px;border-radius: 10px; padding:10px">{{image}}</textarea>
+</div>

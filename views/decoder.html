@@ -1,0 +1,17 @@
+<div id="list-danger-page" class="page">
+    <div class="menu">
+        <a class="item" href="#!index" style="padding-left: 18px;">
+            <i class="fa fa-home"></i>
+        </a>
+        <span class="item">Decoder</span>
+    </div>
+    <div style="height: 60px;">
+
+    </div>
+</div>
+<div>
+    <textarea placeholder="Paste a base64 here" style="height: 300px; width: 100%; border-width: 2px;border-radius: 10px; padding:10px; margin-top: 20px;margin-bottom: 20px;" ng-model="base64" ng-change="convertBase64(base64)"></textarea>
+    <div class="image-container" style="height: 200px;">
+        <img ng-src={{base64}} style="height: 200px;border-radius: 10px;" />
+    </div>
+</div>
